@@ -8,3 +8,43 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+/* Centering content for both home and help pages */
+.centered-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text inside the container */
+}
+
+.centered-page a {
+  color: #0366d6; /* Link color */
+  text-decoration: none;
+}
+
+.centered-page a:hover {
+  text-decoration: underline;
+}
+
+/* Set a global font for the entire app */
+body {
+  font-family: 'Arial', sans-serif; /* Default font */
+  font-size: 20px; /* Adjust base font size if needed */
+  line-height: 1.5; /* Improve readability */
+  color: #333; /* Set a default text color */
+
+  /* Uncomment any of the following font-family options to test: */
+
+  /* font-family: 'Verdana', sans-serif; */ /* Clean and modern sans-serif */
+  /* font-family: 'Georgia', serif; */ /* Classic serif font */
+  /* font-family: 'Tahoma', sans-serif; */ /* Compact sans-serif */
+  /* font-family: 'Times New Roman', serif; */ /* Traditional serif font */
+  /* font-family: 'Roboto', sans-serif; */ /* Modern sans-serif (Google Font) */
+  /* font-family: 'Lato', sans-serif; */ /* Professional sans-serif (Google Font) */
+  /* font-family: 'Montserrat', sans-serif; */ /* Geometric sans-serif (Google Font) */
+  /* font-family: 'Merriweather', serif; */ /* Readable serif (Google Font) */
+  /* font-family: 'Open Sans', sans-serif; */ /* Versatile sans-serif (Google Font) */
+  /* font-family: 'Courier New', monospace; */ /* Monospaced font for code-like appearance */
+}
