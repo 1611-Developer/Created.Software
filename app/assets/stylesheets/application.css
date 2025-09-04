@@ -10,11 +10,11 @@
  */
 
 /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* Set a global font for the entire app */
 body {
@@ -55,8 +55,26 @@ body {
   flex-direction: column;
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
-  height: 100vh; /* Full viewport height */
+  height: 80vh; /* Full viewport height */
   text-align: center; /* Center text inside the container */
+  min-height: 100vh;
+}
+
+.landing-page {
+    background-color: #1E267c !important;
+    background: linear-gradient(45deg, #1E267c, #ff6b35); !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: white;
+}
+
+.centered-page h1 {
+  font-size: 50px;
+}
+
+.centered-page h2 {
+  font-size: 30px;
+  font-weight: 200;
 }
 
 .centered-page a {
@@ -68,12 +86,21 @@ body {
   text-decoration: underline;
 }
 
+.centered-page button {
+  font-size: 20px;
+}
+
+.centered-page input {
+font-size: 20px;
+}
+
+
 /* Header Styles */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #222;
+  background-color: transparent;
   color: #fff;
   height: 65px; /* Explicitly set a shorter height */
   display: flex;
@@ -85,7 +112,7 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  background: #222;
+  background-color: transparent;
   justify-content: space-between; /* Space between logo and nav */
   align-items: center; /* Align vertically */
   padding-left: 16px;
@@ -94,6 +121,7 @@ header {
 
 /* Logo Styling */
 #logo {
+  padding-top: 20px;
   font-size: 1.8rem; /* Increase font size */
   /* font-family: 'Georgia', serif; /* Change font style */
   /* Uncomment one font-family at a time to try it: */
@@ -152,6 +180,7 @@ nav ul {
   display: flex;
   gap: 15px;
   margin: 0;
+  padding-top: 20px;
 }
 
 nav ul li a {
