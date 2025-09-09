@@ -160,6 +160,10 @@ nav ul li a:hover {
   color: white;
 }
 
+.nav-login {
+  border-radius: 5px;
+}
+
 /* Hamburger Menu (Hidden by default) */
 .hamburger {
   display: none;
@@ -214,28 +218,25 @@ nav ul li a:hover {
   margin-top: 60px; /* To avoid overlap with fixed navbar */
 }
 
-.nav-signup-login-btn {
-  background-color: transparent; /* Transparent background */
-  color: white; /* White text */
-  border: 2px solid white; /* White border */
-  border-radius: 10px; /* Semi-rounded corners */
+.login-signup-btn {
   cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+  border: 1px solid white; /* White border */
+  border-radius: 5px; /* Optional: Rounded corners */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  padding-bottom: 1px;
 }
 
-.nav-signup-btn-color {
-  background-color: #4CAF50; !important;/* Green color */                           color: white;                                                                 
-  border: none;                                                                 
-  border-radius: 6px;                                                           
-  cursor: pointer;                                                              
-  transition: background-color 0.2s;
-  padding-bottom: 3px;
-}
-
-.nav-signup-login-btn:hover {
+.login-signup-btn:hover {
     background-color: white; /* White background on hover */
     color: black; /* Black text on hover */
 }
+
+.signup-btn-color {
+  background-color: #4CAF50; !important;/* Green color */
+}
+
 
 .container {
     display: flex;
@@ -254,24 +255,16 @@ nav ul li a:hover {
 .email-input {
     flex: 1;
     padding: 0.75rem;
-    border: 1px solid #ddd;
+    border: 3px solid black;
     border-radius: 6px;
     box-sizing: border-box;
     font-size: 1rem;
+    width: 300px;
 }
 
-.signup-button {
+.signup-btn-bottom {
     padding: 0.84rem 1.5rem;
-    background-color: #4CAF50; /* Green color */
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.signup-button:hover {
-    background-color: #45a049;
+    border: 3px solid black;
 }
 
 .form-container {
