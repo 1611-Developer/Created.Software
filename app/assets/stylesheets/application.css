@@ -61,8 +61,7 @@ body {
 }
 
 .landing-page {
-    background-color: #1E267c !important;
-    background: linear-gradient(45deg, #1E267c, #ff6b35); !important;
+    background-color: #000 !important;
     margin: 0 !important;
     padding: 0 !important;
     color: white;
@@ -122,56 +121,20 @@ header {
 /* Logo Styling */
 #logo {
   padding-top: 20px;
-  font-size: 1.8rem; /* Increase font size */
-  /* font-family: 'Georgia', serif; /* Change font style */
-  /* Uncomment one font-family at a time to try it: */
-
-  /* Serif Fonts (Classic, professional) */
-  /* font-family: 'Georgia', serif; */
-  /* font-family: 'Times New Roman', serif; */
-  /* font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; */
-  /* font-family: 'Garamond', serif; */
-  /* font-family: 'Cambria', Cochin, Georgia, serif; */
-
-  /* Sans-Serif Fonts (Modern, clean) */
-  /* font-family: 'Arial', sans-serif; */
-  /* font-family: 'Helvetica', sans-serif; */
-  /* font-family: 'Verdana', sans-serif; */
-  /* font-family: 'Trebuchet MS', sans-serif; */
-  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; */
-  /* font-family: 'Tahoma', Geneva, sans-serif; */
-  /* font-family: 'Segoe UI', Tahoma, Geneva, sans-serif; */
-  /* font-family: 'Open Sans', sans-serif; */
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-family: 'Lato', sans-serif; */
-
-  /* Monospace Fonts (Technical, coding) */
-  font-family: 'Courier New', Courier, monospace; */
-  /* font-family: 'Lucida Console', Monaco, monospace; */
-  /* font-family: 'Consolas', 'Courier New', monospace; */
-  /* font-family: 'Fira Code', monospace; */
-  /* font-family: 'Source Code Pro', monospace; */
-
-  /* Cursive Fonts (Elegant, decorative) */
-  /* font-family: 'Brush Script MT', cursive; */
-  /* font-family: 'Pacifico', cursive; */
-  /* font-family: 'Dancing Script', cursive; */
-  /* font-family: 'Great Vibes', cursive; */
-  /* font-family: 'Satisfy', cursive; */
-
-  /* Fantasy Fonts (Playful, creative) */
-  /* font-family: 'Copperplate', 'Papyrus', fantasy; */
-  /* font-family: 'Impact', fantasy; */
-  /* font-family: 'Lobster', cursive; */
-  /* font-family: 'Fredoka One', cursive; */
-  /* font-family: 'Playfair Display', serif; */
-  font-weight: bold; /* Make the font bold */
-  color: #fff; /* Ensure the font color is white */
-  text-decoration: none; /* Remove underline from the link */
+  font-size: 2.5rem; /* Increase font size */
+  font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12;
+  color: #fff;
+  text-decoration: none; /* Remove underline from the link */ 
 }
 
 #logo:hover {
-  color: #ff9800; /* Optional: Add a hover effect */
+  color: #000; /* Optional: Add a hover effect */
 }
 
 
@@ -191,8 +154,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #444;
+  background-color: white;
+  color: black;
   border-radius: 5px;
+}
+
+.nav-signup {
+  background-color: #4CAF50;
+  color: white;
 }
 
 /* Hamburger Menu (Hidden by default) */
@@ -215,7 +184,7 @@ nav ul li a:hover {
     nav {
       display: none; /* Hide navigation links by default */
       flex-direction: column;
-      background-color: #222;
+      background: #000;;
       position: absolute;
       top: 50px;
       right: 0;
@@ -237,7 +206,7 @@ nav ul li a:hover {
     .hamburger {
       display: flex; /* Show hamburger menu on small screens */
     }
-    
+
     /* When the 'active' class is added, the nav becomes visible */
     nav.active {
       display: flex; /* Show navigation when active */
@@ -249,4 +218,78 @@ nav ul li a:hover {
   margin-top: 60px; /* To avoid overlap with fixed navbar */
 }
 
+.nav-signup-login-btn {
+  background-color: transparent; /* Transparent background */
+  color: white; /* White text */
+  border: 2px solid white; /* White border */
+  border-radius: 10px; /* Semi-rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+}
 
+.nav-signup-btn-color {
+  background-color: #4CAF50; !important;/* Green color */                           color: white;                                                                 
+  border: none;                                                                 
+  border-radius: 6px;                                                           
+  cursor: pointer;                                                              
+  transition: background-color 0.2s;
+  padding-bottom: 3px;
+}
+
+.nav-signup-login-btn:hover {
+    background-color: white; /* White background on hover */
+    color: black; /* Black text on hover */
+}
+
+.container {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+
+.email-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.signup-button {
+    padding: 0.84rem 1.5rem;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.signup-button:hover {
+    background-color: #45a049;
+}
+
+.form-container {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
