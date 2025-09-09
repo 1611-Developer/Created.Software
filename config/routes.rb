@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "users/new"
   # Defines the root path route ("/")
   root "static_pages#home"
   get  "/help",    to: "static_pages#help"
