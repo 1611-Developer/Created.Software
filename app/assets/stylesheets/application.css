@@ -21,8 +21,8 @@ body {
   /*font-family: 'Arial', sans-serif; /* Default font */
   font-size: 20px; /* Adjust base font size if needed */
   line-height: 1.5; /* Improve readability */
-  color: #333; /* Set a default text color */
-
+  color: white; /* Set a default text color */
+  background-color: #6CB4EE;
   /* Uncomment any of the following font-family options to test: */
 
   /* font-family: 'Verdana', sans-serif; */ /* Clean and modern sans-serif */
@@ -61,10 +61,8 @@ body {
 }
 
 .landing-page {
-    background-color: #000 !important;
     margin: 0 !important;
     padding: 0 !important;
-    color: #F0EAD6 !important;
 }
 
 .centered-page h1 {
