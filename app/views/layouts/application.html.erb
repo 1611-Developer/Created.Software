@@ -16,10 +16,9 @@
 
   <%= stylesheet_link_tag :application, "data-turbo-track": "reload" %> <!-- Using application.css -->
   <%= javascript_importmap_tags %>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -38,7 +37,7 @@
           <li><%= link_to "Help",    help_path%></li>
           <li><%= link_to "Contact", contact_path %></li>
           <li class="nav-login-btn"><%= link_to "Login", '#' %></li>
-          <li class="signup-btn nav-signup-btn-color"><%= link_to "Signup", '#' %></li>
+          <li class="signup-btn nav-signup-btn-color"><%= link_to "Signup", signup_path  %></li>
         </ul>
       </nav>
     </div>

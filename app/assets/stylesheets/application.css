@@ -120,15 +120,13 @@ header {
 #logo {
   padding-top: 20px;
   font-size: 2.5rem; /* Increase font size */
-  font-family: "Nabla", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "EDPT" 100,
-    "EHLT" 12;
   color: #fff;
-  text-decoration: none; /* Remove underline from the link */ 
+  text-decoration: none; /* Remove underline from the link */
+  font-style: normal;
+  font-family: "Sriracha", cursive;
 }
 
 #logo:hover {
